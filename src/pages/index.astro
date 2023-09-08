@@ -2,7 +2,7 @@
 import "../styles/global.css";
 ---
 
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="utf-8" />
     <!-- TODO: use correct favicon (https://github.com/TSC-Rot-Gold-Casino-Nurnberg-e-V/rgc-website/issues/80) -->
@@ -11,12 +11,19 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>Herzlich Willkommen im TSC Rot-Gold-Casino Nürnberg e.V.</title>
   </head>
-  <body>
+  <body
+    class="flex h-full flex-col items-center justify-center space-y-8 bg-secondary-950"
+  >
     <h1 class="text-gold heading-normal">Herzlich Willkommen im RGC</h1>
     <form method="post" action="$PORTAL_ACTION$">
       <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$" />
       <input name="zone" type="hidden" value="$PORTAL_ZONE$" />
-      <input name="accept" type="submit" value="Continue" />
+      <input
+        name="accept"
+        type="submit"
+        value="WLAN aktivieren"
+        class="hover:text-accent hover-shadow-md w-fit cursor-pointer rounded-md bg-gradient-to-br from-primary-300 from-10% via-primary-100 via-40% to-primary-300 to-90% px-6 py-4 font-bold text-secondary-950 shadow transition-all hover:scale-105 hover:shadow-secondary-900/10"
+      />
     </form>
   </body>
 </html>
