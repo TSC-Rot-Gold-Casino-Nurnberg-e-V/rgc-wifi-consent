@@ -12,6 +12,10 @@
     <title>Herzlich Willkommen beim TSC Rot-Gold-Casino Nürnberg e.V.</title>
   </head>
   <body>
-    <h1>Astro</h1>
+    <form method="post" action="$PORTAL_ACTION$">
+      <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$" />
+      <input name="zone" type="hidden" value="$PORTAL_ZONE$" />
+      <input name="accept" type="submit" value="Continue" />
+    </form>
   </body>
 </html>
