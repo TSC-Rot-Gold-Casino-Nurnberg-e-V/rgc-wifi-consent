@@ -12,18 +12,32 @@ import "../styles/global.css";
     <title>Herzlich Willkommen im TSC Rot-Gold-Casino Nürnberg e.V.</title>
   </head>
   <body
-    class="flex h-full flex-col items-center justify-center space-y-8 bg-secondary-950"
+    class="mx-auto flex h-full max-w-md flex-col justify-center bg-secondary-950 px-6 text-base-50"
   >
-    <h1 class="text-gold heading-normal">Herzlich Willkommen im RGC</h1>
-    <form method="post" action="$PORTAL_ACTION$">
+    <h1
+      class="text-gold heading-small sm:heading-normal"
+      style="text-wrap: balance"
+    >
+      Herzlich Willkommen im Rot-Gold-Casino Nürnberg
+    </h1>
+    <form method="post" action="$PORTAL_ACTION$" class="space-y-8">
       <!-- TODO: add checkbox for accepting terms and conditions -->
       <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$" />
       <input name="zone" type="hidden" value="$PORTAL_ZONE$" />
+      <p class="text-large" style="text-wrap: balance">
+        Durch die Aktivierung des kostenfreien WLANs erklärst du dich mit den
+        geltenden <span
+          tabindex="0"
+          class="cursor-pointer rounded font-semibold"
+        >
+          <span class="text-gold">Nutzungsbedingungen</span>
+        </span> einverstanden.
+      </p>
       <input
         name="accept"
         type="submit"
         value="WLAN aktivieren"
-        class="hover:text-accent hover-shadow-md w-fit cursor-pointer rounded-md bg-gradient-to-br from-primary-300 from-10% via-primary-100 via-40% to-primary-300 to-90% px-6 py-4 font-bold text-secondary-950 shadow transition-all hover:scale-105 hover:shadow-secondary-900/10"
+        class="hover:text-accent text-large w-full cursor-pointer rounded-md bg-gradient-to-br from-primary-300 from-10% via-primary-100 via-40% to-primary-300 to-90% px-6 py-4 font-extrabold text-secondary-950 transition-all hover:scale-105"
       />
     </form>
   </body>
