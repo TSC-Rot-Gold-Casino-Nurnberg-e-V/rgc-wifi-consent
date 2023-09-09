@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { TermsAndConditions } from "../components/TermsAndConditions";
 ---
 
 <html lang="en" class="h-full">
@@ -26,12 +27,7 @@ import "../styles/global.css";
       <input name="zone" type="hidden" value="$PORTAL_ZONE$" />
       <p class="text-large" style="text-wrap: balance">
         Durch die Aktivierung des kostenfreien WLANs erklärst du dich mit den
-        geltenden <span
-          tabindex="0"
-          class="cursor-pointer rounded font-semibold"
-        >
-          <span class="text-gold">Nutzungsbedingungen</span>
-        </span> einverstanden.
+        geltenden <TermsAndConditions client:load /> einverstanden.
       </p>
       <input
         name="accept"
