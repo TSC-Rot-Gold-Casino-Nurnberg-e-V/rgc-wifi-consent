@@ -60,14 +60,55 @@ export const TermsAndConditions = () => {
                   <Dialog.Title className="text-accent heading-small sm:heading-normal">
                     Nutzungs&shy;bedingungen
                   </Dialog.Title>
-                  <div className="mt-2">
-                    {/* TODO: real text */}
-                    <p className="text-normal text-gray-500">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Aliquam amet dignissimos dolorum, earum eius ex ipsa iusto
-                      molestiae molestias, odit omnis quas suscipit tempore
-                      ullam.
-                    </p>
+                  <div className="mt-4 max-h-96 space-y-4 overflow-y-scroll text-base-700">
+                    <Section title="Zweck der Nutzung">
+                      Das kostenfreie WLAN des Vereins steht ausschließlich für
+                      private und nicht-kommerzielle Zwecke zur Verfügung.
+                      Jegliche kommerzielle Nutzung ist strengstens untersagt.
+                    </Section>
+                    <Section title="Verantwortungsvoller Gebrauch">
+                      Die Nutzung des WLANs sollte verantwortungsvoll und im
+                      Einklang mit allen geltenden Gesetzen und Vorschriften
+                      erfolgen. Illegale Aktivitäten sind strengstens untersagt.
+                    </Section>
+                    <Section title="Einschränkungen der Bandbreite">
+                      Um eine faire Nutzung für alle Benutzer zu gewährleisten,
+                      behält sich der Verein das Recht vor, die Bandbreite
+                      individuell zu begrenzen.
+                    </Section>
+                    <Section title="Sicherheit">
+                      Der Benutzer ist allein für die Sicherheit seines Geräts
+                      und seiner Daten verantwortlich. Es wird empfohlen, eine
+                      geeignete Sicherheitssoftware zu verwenden und keine
+                      sensiblen Informationen über das WLAN zu übertragen.
+                    </Section>
+                    <Section title="Inhalte">
+                      Der Zugriff auf illegale, unethische oder anstößige
+                      Inhalte ist untersagt. Der Tanzverein behält sich das
+                      Recht vor, den Zugriff auf bestimmte Websites oder Inhalte
+                      zu beschränken.
+                    </Section>
+                    <Section title="Protokollierung und Überwachung">
+                      Der Tanzverein behält sich das Recht vor, die Nutzung des
+                      WLANs zu protokollieren und zu überwachen, um die
+                      Einhaltung dieser Nutzungsbedingungen sicherzustellen.
+                    </Section>
+                    <Section title="Beendigung">
+                      Der Tanzverein kann die WLAN-Nutzung ohne vorherige
+                      Ankündigung beenden oder einschränken, wenn gegen diese
+                      Nutzungsbedingungen verstoßen wird.
+                    </Section>
+                    <Section title="Änderung der Nutzungsbedingungen">
+                      Der Tanzverein behält sich das Recht vor, diese
+                      Nutzungsbedingungen jederzeit zu ändern. Es liegt in der
+                      Verantwortung des Benutzers, regelmäßig nach
+                      Aktualisierungen zu suchen.
+                    </Section>
+                    <Section title="Zustimmung">
+                      Die Nutzung des kostenfreien WLANs im Tanzverein setzt die
+                      uneingeschränkte Zustimmung zu diesen Nutzungsbedingungen
+                      voraus.
+                    </Section>
                   </div>
 
                   <div className="mt-4">
