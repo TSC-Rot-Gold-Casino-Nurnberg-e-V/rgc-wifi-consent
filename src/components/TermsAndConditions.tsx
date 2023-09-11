@@ -1,5 +1,5 @@
 import { useState, Fragment } from "react";
-import type { KeyboardEvent } from "react";
+import type { KeyboardEvent, PropsWithChildren } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
 export const TermsAndConditions = () => {
@@ -88,3 +88,10 @@ export const TermsAndConditions = () => {
     </>
   );
 };
+
+const Section = ({ title, children }: PropsWithChildren<{ title: string }>) => (
+  <section className="space-y-2">
+    <h2 className="text-accent heading-extrasmall">{title}</h2>
+    <p>{children}</p>
+  </section>
+);
