@@ -6,6 +6,9 @@
   *:focus-visible {
     @apply outline outline-2 outline-offset-4 outline-primary-300;
   }
+  body {
+    background: url("public/rgc-logo.svg") no-repeat center;
+  }
 }
 
 @layer components {
