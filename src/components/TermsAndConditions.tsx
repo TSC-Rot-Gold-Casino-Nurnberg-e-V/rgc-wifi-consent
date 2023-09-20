@@ -60,7 +60,7 @@ export const TermsAndConditions = () => {
                   <Dialog.Title className="text-accent heading-small sm:heading-normal">
                     Nutzungs&shy;bedingungen
                   </Dialog.Title>
-                  <div className="mt-4 max-h-96 space-y-4 overflow-y-scroll text-base-700">
+                  <div className="mt-4 max-h-[min(calc(100vh-16rem),20rem)] space-y-4 overflow-y-scroll text-base-700">
                     <Section title="Zweck der Nutzung">
                       Das kostenfreie WLAN des Vereins steht ausschließlich für
                       private und nicht-kommerzielle Zwecke zur Verfügung.
